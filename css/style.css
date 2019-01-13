@@ -4,22 +4,21 @@
   box-sizing: border-box;
 }
 #wrap {
-  width: 1650px;
-  height: 750px;
-  padding: 40px 60px;
-  position: relative;
-  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 30px 50px;
 }
 header {
   width: 100%;
   height: 65px;
-  margin-bottom: 40px;
-  padding-left: 20px;
+  margin-bottom: 30px;
 }
 header > .logo {
   width: 360px;
   height: 65px;
   float: left;
+  margin-left: 20px;
 }
 header > .logo > h1 {
   font-size: 50px;
@@ -30,7 +29,7 @@ header > .logo > img {
 }
 nav {
   width: 300px;
-  height: 40px;
+  height: 60px;
   float: right;
   padding: 12.5px 0;
 }
@@ -43,32 +42,32 @@ nav > button {
 }
 section {
   width: 100%;
-  height: 630px;
+  height: calc(100% - 110px);
 }
 article {
-  width: 1100px;
-  height: 630px;
+  width: calc(100% - 340px);
+  height: 100%;
   float: left;
 }
 article > #map {
-  width: 1100px;
-  height: 630px;
+  width: 100%;
+  height: 100%;
 }
 aside {
   width: 300px;
-  height: 550px;
+  height: 100%;
   float: right;
 }
 aside > #bus_pos {
   width: 300px;
-  height: 630px;
+  height: 100%;
   padding: 10px 25px;
   border: 5px solid #28a745;
   border-radius: 10px;
   overflow: scroll;
 }
 
-/* JavaScript : map.js */
+/* map.js */
 #content > h5 {
   margin: 15px 0;
   text-align: center;
@@ -89,8 +88,8 @@ aside > #bus_pos {
   display: inline-block;
 }
 #imgSize {
-  width: 27.5px;
-  height: 27.5px;
+  width: 25px;
+  height: 25px;
 }
 .bus_arr {
   display: inline-block;
