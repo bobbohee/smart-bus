@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>SMART BUS</title>
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRjyolHlstwmMrTNK9vanIGsdeRJU3hDo&callback=initMap" async defer></script>
     <script src="js/map.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/image/favicon.ico">
-</head>
-<body>
-  <div id="wrap">
-    <header>
-      <div class="logo">
-        <h1>SMART BUS</h1>
-        <img src="image/bus-stop.png" alt="bus-image" width="60" height="60">
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="logo">
+          <h1>SMART BUS</h1>
+          <img src="image/bus-stop.png" alt="bus-image" width="60" height="60">
+        </div>
+        <nav>
+          <form>
+            <input type="text" name="code" id="code" class="form-control" placeholder="버스정류장 고유번호" maxlength="5" autocomplete="off" onkeydown="return enterKey();"/>
+          </form> 
+          <button type="submit" class="btn btn-success" id="send" onclick="lookUp();">조회</button>
+        </nav>
+      </header>
+      <section>
+        <article>
+          <div id="map">
+          </article>
+          <aside>
+            <div id="bus_pos"></div>
+          </aside>
+        </section>
       </div>
-      <nav>
-        <form>
-          <input type="text" name="busname" class="form-control" id="num" placeholder="입력해주세요" maxlength="5" autocomplete="off" onkeydown="return enterKey();"/>
-        </form> 
-        <button class="btn btn-success" id="send" onclick="lookUp();">조회</button>
-      </nav>
-    </header>
-    <section>
-      <article>
-        <div id="map">
-      </article>
-      <aside>
-        <div id="bus_pos"></div>
-      </aside>
-    </section>
-  </div>
 </body>
 </html>

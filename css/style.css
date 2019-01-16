@@ -68,9 +68,20 @@ aside > #bus_pos {
 }
 
 /* map.js */
-#content > h5 {
+#content h5 {
   margin: 15px 0;
   text-align: center;
+}
+.contentBus h6 {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.contentBus img {
+  width: 25px;
+  height: 25px;
+}
+.contentBus p {
+  line-height: 25px;
 }
 .buses {
   width: 100%;
@@ -86,10 +97,6 @@ aside > #bus_pos {
   position: absolute;
   bottom: 20px; right: 0;
   display: inline-block;
-}
-#imgSize {
-  width: 25px;
-  height: 25px;
 }
 .bus_arr {
   display: inline-block;
